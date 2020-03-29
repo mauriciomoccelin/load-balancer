@@ -1,0 +1,15 @@
+{
+  "name": "load-balancer",
+  "version": "1.0.1",
+  "description": "A simple load balancer to use on specific http or https calls.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/index.js"
+  },
+  "keywords": [
+    "load-balancer",
+    "balancer"
+  ],
+  "author": "Mauricio Moccelin <mauriciomoccellin@hotmail.com> (github.com/mauriciomoccelin)",
+  "license": "MIT"
+}
