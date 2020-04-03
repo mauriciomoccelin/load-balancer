@@ -19,12 +19,16 @@ class Server extends Object {
 
   getHttpAddress () {
     this.call()
-    return `http://${this.ipHostNameOrDns}:${this.port}`;
+    return this.port > 0
+      ? `http://${this.ipHostNameOrDns}:${this.port}`
+      : `http://${this.ipHostNameOrDns}`;
   }
 
   getHttpsAddress () {
     this.call()
-    return `https://${this.ipHostNameOrDns}:${this.port}`;
+    return this.port > 0
+      ? `https://${this.ipHostNameOrDns}:${this.port}`
+      : `https://${this.ipHostNameOrDns}`;
   }
 }
 
